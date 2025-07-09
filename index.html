@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Gabo's World</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body id="body">
+    <div class="scroll-container" id="scrollContainer">
+        <section class="secciones" id="bienvenida">
+            <div id="textoIndex">
+                <h1 class="glitch">Bienvenid@</h1>
+                <h2>Soy Gabriel Pinilla, aunque entre amigos y proyectos, me conocen como <span class="glitch">GABO</span> <br>
+                    <span id="reduceText">(sí, como García Márquez).</span></h2>
+                    <h3>Diseño con propósito y desarrollo con lógica: Soy diseñador industrial, UX designer y desarrollador Full Stack</h3>
+                </div>
+                <p class="continuarBtn" onclick="scrollToSection('menuPrincipal')">Iniciar</p>
+                <div class="videoContainer">
+                    <video autoplay muted loop class="videoFondo">
+                        <source src="/assets/backgroundsVideos/indexLoop.mp4" type="video/mp4">
+                    </video>
+                </div>
+        </section>
+        <section class="secciones" id="menuPrincipal">
+            <div id="menuObjects">
+                <img src="/assets/img/logoGlitch.png" alt="Gabo Logo Glitch" id="gaboLogo">
+                <div id="menuText">
+                    <p class="itemMenu" onclick="scrollToSection('sobreMi')">Sobre mi</p>
+                    <p class="itemMenu" onclick="scrollToSection('habilidades')">Habilidades</p>
+                    <p class="itemMenu" onclick="scrollToSection('educacion')">Educación</p>
+                    <p class="itemMenu" onclick="scrollToSection('proyectos')">Proyectos</p>
+                    <p class="itemMenu" onclick="scrollToSection('contacto')">Contactame</p>
+                </div>
+            </div>
+                <div class="videoContainer">
+                    <video autoplay muted loop class="videoFondo">
+                    <source src="/assets/backgroundsVideos/mainLoop.mp4" type="video/mp4">
+                    </video>
+                </div>
+        </section>
+        <section class="secciones" id="sobreMi">
+            <button class="homeBtn" type="button" onclick="scrollToSection('menuPrincipal')"><img src="/assets/img/home_logo.png" alt="Logo home" class="homeLogo"></button>
+            <div id="aboutText">
+                <h1 id="aboutTitle">Sobre mi</h1>
+                <p id="aboutP">Soy desarrollador Full Stack Java y disfruto crear sitios web eficientes, escalables y visualmente atractivos. Me apasiona resolver problemas complejos, aprender constantemente y trabajar en equipo. Gracias a mi enfoque analítico, me involucro a fondo en cada proyecto, buscando siempre mejorar en lo técnico y lo personal.<br><br>Fuera del desarrollo, me interesa el modelado 3D y la tecnología en general. Busco integrar estos intereses para crear soluciones innovadoras que generen un impacto real.</p>
+            </div>
+            <div class="videoContainer">
+                <video autoplay muted loop class="videoFondo" style="transform: scaleX(-1);">
+                    <source src="/assets/backgroundsVideos/mainLoop.mp4" type="video/mp4">
+                </video>
+            </div>
+            <p class="continuarBtn" onclick="scrollToSection('habilidades')">Continuar</p>
+        </section>
+        <section class="secciones" id="habilidades">
+            <button class="homeBtn" type="button" onclick="scrollToSection('menuPrincipal')"><img src="/assets/img/home_logo.png" alt="Logo home" class="homeLogo"></button>
+            <main id="abilitiesContent">
+                <h1 id="abilitiesTitle">Habilidades</h1>
+                <div id="mainContentAb">
+                    <div id="avatar" class="abilitiesSections">
+                        <img src="/assets/img/avatar_glitch.png" alt="avatar">
+                    </div>
+                    <div class="abilitiesSections">
+                        <div id="programacion">
+                            <h2>Programación</h2>
+                            <div class="iconosContainer">
+                                <figure>
+                                    <img src="/assets/img/Logos Programas/js_logo.png" alt="js">
+                                    <figcaption>JavaScript</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="/assets/img/Logos Programas/html5_logo.png" alt="html">
+                                    <figcaption>HTML</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="/assets/img/Logos Programas/python_logo.png" alt="python">
+                                    <figcaption>Python</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="/assets/img/Logos Programas/css3_logo.png" alt="css">
+                                    <figcaption>CSS</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="/assets/img/Logos Programas/java_logo.png" alt="java">
+                                    <figcaption>Java</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="/assets/img/Logos Programas/SQL_logo.png" alt="SQL">
+                                    <figcaption>SQL</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="/assets/img/Logos Programas/git_logo.png" alt="git">
+                                    <figcaption>Git</figcaption>                                    
+                                </figure>
+                                <figure>
+                                    <img src="/assets/img/Logos Programas/spring_logo.png" alt="springboot">
+                                    <figcaption>Springboot</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="/assets/img/Logos Programas/Bootstrap_logo.svg.png" alt="bootstrap">
+                                    <figcaption>Bootstrap</figcaption>                                    
+                                </figure>
+                                <figure>
+                                    <img src="/assets/img/Logos Programas/React.png" alt="react">
+                                    <figcaption>React</figcaption>                                    
+                                </figure>
+                            </div>
+                        </div>
+                        <div id="diseño">
+                            <h2>Diseño</h2>
+                            <div class="iconosContainer">
+                                <figure>
+                                    <img src="/assets/img/Logos Programas/figma_logo.png" alt="figma">
+                                    <figcaption>Figma</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="/assets/img/Logos Programas/ps_logo.png" alt="photoshop">
+                                    <figcaption>Photoshop</figcaption>                                    
+                                </figure>
+                                <figure>
+                                    <img src="/assets/img/Logos Programas/illustrator_logo.png" alt="illustrator">
+                                    <figcaption>Illustrator</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="/assets/img/Logos Programas/indesign_logo.png" alt="indesign">
+                                    <figcaption>InDesign</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="/assets/img/Logos Programas/blender_logo.png" alt="blender">
+                                    <figcaption>Blender</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="responsiveAb">
+                    <div id="avatarRespon" >
+                        <img src="/assets/img/avatar_glitch.png" alt="avatar">
+                    </div>
+                    <div class="modalIconosContainer">
+                        <div id="overlay" class="overlay">
+                            <img src="/assets/img/x_icon.png" alt="x_icon" class="xIcon" style="width:5%; height:auto;">
+                        </div>
+                        <div id="modal1"  class="modalIconos">
+                            <figure>
+                                <img src="/assets/img/Logos Programas/js_logo.png" alt="js">
+                                <figcaption>JavaScript</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="/assets/img/Logos Programas/html5_logo.png" alt="html">
+                                <figcaption>HTML</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="/assets/img/Logos Programas/python_logo.png" alt="python">
+                                <figcaption>Python</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="/assets/img/Logos Programas/css3_logo.png" alt="css">
+                                <figcaption>CSS</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="/assets/img/Logos Programas/java_logo.png" alt="java">
+                                <figcaption>Java</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="/assets/img/Logos Programas/SQL_logo.png" alt="SQL">
+                                <figcaption>SQL</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="/assets/img/Logos Programas/git_logo.png" alt="git">
+                                <figcaption>Git</figcaption>                                    
+                            </figure>
+                            <figure>
+                                <img src="/assets/img/Logos Programas/spring_logo.png" alt="springboot">
+                                <figcaption>Springboot</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="/assets/img/Logos Programas/Bootstrap_logo.svg.png" alt="bootstrap">
+                                <figcaption>Bootstrap</figcaption>                                    
+                            </figure>
+                            <figure>
+                                <img src="/assets/img/Logos Programas/React.png" alt="react">
+                                <figcaption>React</figcaption>                                    
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="modalIconosContainer">
+                        <div id="modal2" class="modalIconos">
+                            <figure>
+                                <img src="/assets/img/Logos Programas/ps_logo.png" alt="photoshop">
+                                <figcaption>Photoshop</figcaption>                                    
+                            </figure>
+                            <figure>
+                                <img src="/assets/img/Logos Programas/figma_logo.png" alt="figma">
+                                <figcaption>Figma</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="/assets/img/Logos Programas/illustrator_logo.png" alt="illustrator">
+                                <figcaption>Illustrator</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="/assets/img/Logos Programas/blender_logo.png" alt="blender">
+                                <figcaption>Blender</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="/assets/img/Logos Programas/indesign_logo.png" alt="indesign">
+                                <figcaption>InDesign</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="/assets/img/Logos Programas/sketchbook_logo.png" alt="sketchbook">
+                                <figcaption>Sketchbook</figcaption>
+                             </figure>
+                            </div>
+                        </div>
+                        <div class="botonesModal">
+                            <button class="openButton" data-modal="modal1">Programación</button>
+                            <button class="openButton" data-modal="modal2">Diseño</button>
+                        </div>    
+                    </div>
+            </main>
+            <div class="videoContainer">
+                <video autoplay muted loop class="videoFondo">
+                    <source src="/assets/backgroundsVideos/abilitiesLoop.mp4" type="video/mp4">
+                </video>
+            </div>
+            <p class="continuarBtn" onclick="scrollToSection('educacion')">Continuar</p>
+            <p class="volverBtn" onclick="scrollToSection('sobreMi')">Atrás</p>
+        </section>
+        <section class="secciones" id="educacion">
+            <button class="homeBtn" type="button" onclick="scrollToSection('menuPrincipal')"><img src="/assets/img/home_logo.png" alt="Logo home" class="homeLogo"></button>
+            <div id="eduContent">
+                <div id="eduText" class="contenidoEdu">
+                    <h1 id="educationTitle">Educacion</h1>
+                    <div class="textDonut"></div> 
+                </div>
+                <div class="educationGraphic">
+                    <canvas id="eduDonut"></canvas>
+                </div>
+            </div>
+            <div id="eduContentResponsive">
+                <h1 id="educationTitleResponsive">Educacion</h1>
+                <div class="educationGraphic">
+                    <canvas id="eduDonutResponsive"></canvas>
+                </div>
+                <div class="textDonut"></div>
+            </div>
+            <div class="videoContainer">
+                <video autoplay muted loop class="videoFondo">
+                    <source src="/assets/backgroundsVideos/eduLoop.mp4" type="video/mp4">
+                </video>
+            </div>
+            <p class="continuarBtn" onclick="scrollToSection('proyectos')">Continuar</p>
+            <p class="volverBtn" onclick="scrollToSection('habilidades')">Atrás</p>
+        </section>
+        <section class="secciones" id="proyectos">
+            <button class="homeBtn" type="button" onclick="scrollToSection('menuPrincipal')"><img src="/assets/img/home_logo.png" alt="Logo home" class="homeLogo"></button>
+            <div id="projectContent">
+                <h1 id="projectsTitle">Proyectos</h1>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper" loop="true">
+                        <div class="swiper-slide">
+                            <div class="imgContainer">
+                                <img class="projectsImg" src="/assets/img/projectsImg/journey_screen.png" alt="">
+                                <div class="hoverProjects">
+                                    <p class="acercaDe">Este es un texto de ejemplo utilizado para representar el contenido en esta sección del diseño. Aquí se incluirá una breve descripción o información relevante que ayudará al usuario a comprender el propósito de este bloque. El contenido final será agregado más adelante durante el desarrollo del proyecto.</p>
+                                    <div class="btnsDiv">
+                                        <a href="https://develop2.dh6hj59658nre.amplifyapp.com/" class="btnPag" target="_blank">Ir a la página</a>
+                                        <a href="https://github.com/Arkanhell98/Proyecto_Journey" class="btnPag" target="_blank">Ir al repositorio</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="projectName">Journey</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="imgContainer">
+                                <img class="projectsImg" src="/assets/img/projectsImg/urbn_screen.png" alt="">
+                                <div class="hoverProjects">
+                                    <p class="acercaDe">Este es un texto de ejemplo utilizado para representar el contenido en esta sección del diseño. Aquí se incluirá una breve descripción o información relevante que ayudará al usuario a comprender el propósito de este bloque. El contenido final será agregado más adelante durante el desarrollo del proyecto.</p>
+                                    <div class="btnsDiv">
+                                        <a href="https://arkanhell98.github.io/URBN_Sportwear/" class="btnPag" target="_blank">Ir a la página</a>
+                                        <a href="https://github.com/Arkanhell98/URBN_Sportwear" class="btnPag" target="_blank">Ir al repositorio</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="projectName">URBN Sportwear</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="imgContainer">
+                                <img class="projectsImg" src="/assets/img/projectsImg/snake_screen.png" alt="">
+                                <div class="hoverProjects">
+                                    <p class="acercaDe">Este es un texto de ejemplo utilizado para representar el contenido en esta sección del diseño. Aquí se incluirá una breve descripción o información relevante que ayudará al usuario a comprender el propósito de este bloque. El contenido final será agregado más adelante durante el desarrollo del proyecto.</p>
+                                    <div class="btnsDiv">
+                                        <a href="https://arkanhell98.github.io/Snake_game/" class="btnPag" target="_blank">Ir a la página</a>
+                                        <a href="https://github.com/Arkanhell98/Snake_game" class="btnPag" target="_blank">Ir al repositorio</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="projectName">Snake Game</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="imgContainer">
+                                <img class="projectsImg" src="/assets/img/projectsImg/abc_screen.png" alt="">
+                                <div class="hoverProjects">
+                                    <p class="acercaDe">Este es un texto de ejemplo utilizado para representar el contenido en esta sección del diseño. Aquí se incluirá una breve descripción o información relevante que ayudará al usuario a comprender el propósito de este bloque. El contenido final será agregado más adelante durante el desarrollo del proyecto.</p>
+                                    <div class="btnsDiv">
+                                        <a href="https://arkanhell98.github.io/ABC/" class="btnPag" target="_blank">Ir a la página</a>
+                                        <a href="https://github.com/Arkanhell98/ABC" class="btnPag" target="_blank">Ir al repositorio</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="projectName">ABC</p>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="videoContainer">
+                <video autoplay muted loop class="videoFondo">
+                    <source src="/assets/backgroundsVideos/projectsLoop.mp4" type="video/mp4">
+                </video>
+            </div>
+            <p class="continuarBtn" onclick="scrollToSection('contacto')">Continuar</p>
+            <p class="volverBtn" onclick="scrollToSection('educacion')">Atrás</p>
+        </section>
+        <section class="secciones" id="contacto">
+            <button class="homeBtn" type="button" onclick="scrollToSection('menuPrincipal')"><img src="/assets/img/home_logo.png" alt="Logo home" class="homeLogo"></button>
+            <div id="contactContent">
+                <h1 id="contactTitle">Contactame</h1>
+                <div id="contactSubsection">
+                    <div id="contactIcons" class="contactSection">
+                        <figure>
+                            <img src="/assets/img/Logos Programas/whatsapp_logo.png" alt="whatsapp">
+                            <figcaption>whatsapp</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="/assets/img/Logos Programas/github_logo.png" alt="github">
+                            <figcaption>GitHub</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="/assets/img/Logos Programas/linkedin_logo.png" alt="linkedin">
+                            <figcaption>Linkedin</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="/assets/img/Logos Programas/mail_logo.png" alt="mail">
+                            <figcaption>Mail</figcaption>
+                        </figure> 
+                    </div>
+                    <form id="contactForm" class="contactSection" action="https://formsubmit.co/gabopc98@gmail.com" method="POST">
+                        <div id="emailInfo" class="formSection">
+                            <div>
+                                <p>Nombre</p>
+                                <input id="nombre" class="formInput" type="text" placeholder="Digita tu nombre" name="name">
+                            </div>
+                            <div>
+                                <p>Correo</p>
+                                <input id="correo" class="formInput" type="email" placeholder="Digita tu correo electronico" name="email">
+                            </div>
+                            <div>
+                                <p>Asunto</p>
+                                <input id="asunto" class="formInput" type="text" placeholder="Escribe el asunto" name="subject">
+                            </div>
+                            <div>
+                                <p>Mensaje</p>
+                                <textarea id="mensaje" class="formInput" placeholder="Cuentame de que trata" name="message"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </form>                
+                </div>
+            </div>
+            <div class="videoContainer">
+                <video autoplay muted loop class="videoFondo">
+                    <source src="/assets/backgroundsVideos/contactLoop.mp4" type="video/mp4">
+                </video>
+            </div>
+            <p class="volverBtn" onclick="scrollToSection('proyectos')">Atrás</p>
+        </section>
+    </div>
+            
+    <script src="/scripts/scrollScript.js"></script>
+    <script src="/scripts/modalScripts.js"></script>
+    <script src="/scripts/graficoScript.js"></script>
+    <script src="/scripts/carrouselScript.js"></script>
+</body>
+</html>
+

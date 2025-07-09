@@ -1,0 +1,169 @@
+#educacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+#eduContent{
+    z-index: 2;
+    display: flex;
+    width: 90vw;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+}
+#eduText{
+    width:50vw;
+    text-align: left;
+}
+
+.eduYear{
+    font-family: 'oxanium';
+    font-size:40px;
+    font-weight: 700;
+    text-shadow: 0 0 5px white;
+}
+.chartInst{
+    font-size:2vw;
+}
+
+.textDonut{
+    height: 80%;
+    font-size: 2vw;
+}
+
+#educationTitle{
+    position:absolute;
+    top:10%;
+    font-size: 80px;
+    font-family: 'rubik glitch';
+    font-weight: 100;
+    text-align: left;
+    margin:0;
+    color: #ffffffb4;
+    animation: glitch 2s linear infinite;
+}
+.educationGraphic{
+    width:50vw;
+    height:50vw;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+#eduDonut{
+    animation: glitch 2s linear infinite;
+}
+#eduContentResponsive{
+    display: none;
+}
+
+@media (max-width:1076px){
+    #eduContent{
+        display: none;
+    }
+    #eduContentResponsive{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index:2;
+    position: absolute;
+    width: 90vw;
+    height: 90vh;
+    }
+    #educationTitleResponsive{
+        font-size:12vw;
+        text-align: center;
+        font-family: 'rubik glitch';
+        font-weight: 100;
+        color: #ffffffb4;
+        animation: glitch 2s linear infinite;
+    }
+    .educationGraphic{
+    width:90vw;
+    height:90vw;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    }
+    #eduDonutResponsive{
+    height: auto;
+    animation: glitch 2s linear infinite;
+    }
+    .textDonut{
+        font-size: 3vw;
+        width: 90vw;
+    }
+    .chartInst{
+    font-size:3vw;
+    }
+}
+@media (max-width:750px){
+    .textDonut{
+    font-size: 4vw;
+    }
+    #eduDonutResponsive{
+    animation: glitch 2s linear infinite;
+    }
+    .chartInst{
+    font-size:4vw;
+    }
+
+}
+
+@media screen and (orientation: landscape) and (max-height: 800px){
+    #eduContent{
+    z-index: 2;
+    display: flex;
+    width: 90vw;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    }
+
+
+    .eduYear{
+    font-family: 'oxanium';
+    font-size:10vh;
+    font-weight: 700;
+    text-shadow: 0 0 5px white;
+    }
+
+    .chartInst{
+    font-size:2vw;
+    }
+
+    .textDonut{
+    position: relative;
+    width: 40vw;
+    font-size: 4vh;
+    left: 0.5%;
+    }
+
+    #educationTitle{
+    left: 0.5%;
+    font-size: 10vh;
+    font-family: 'rubik glitch';
+    font-weight: 100;
+    text-align: left;
+    margin:0;
+    color: #ffffffb4;
+    animation: glitch 2s linear infinite;
+    }
+
+    .educationGraphic{
+    width:50vw;
+    height:50vw;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    }
+
+    #eduContentResponsive{
+    display: none;
+    }
+}

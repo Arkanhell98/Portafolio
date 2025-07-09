@@ -1,0 +1,85 @@
+#menuPrincipal{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+#menuObjects{
+  position: absolute;
+  top: 25vh;
+  left: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  z-index: 1;
+}
+#menuText{
+  font-size: 40px;
+  font-family:'oxanium';
+  font-weight: 100;
+  list-style-type: none;
+  margin-left: 5%;
+}
+#gaboLogo{
+  margin:2%;
+  width:70vw;
+  height: auto;
+  animation: glitch 2s linear infinite;
+  opacity: 70%;
+}
+
+@keyframes glitch {
+      0%, 65% {
+        transform: translate(2px,0) skew(0deg);
+        filter: hue-rotate(5deg) brightness(1.1);
+      }
+      5%, 60% {
+        transform: translate(-2px,0) skew(0deg);
+        filter: hue-rotate(-10deg);
+      }
+      64% {
+        transform: translate(0,0) skew(5deg);
+        filter: brightness(0.9) hue-rotate(9deg);
+      }
+    }
+.itemMenu{
+  margin:1.5%;
+}
+.itemMenu:hover{
+    font-weight: 400;
+    text-shadow: 0 0 5px white;
+    animation: glitch 2s linear infinite;
+}
+
+@media(max-width: 1132px) {
+  #gaboLogo{
+  width:90vw;
+  }
+}
+
+@media(max-width: 700px){
+  #menuText{
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    margin-left:0;
+    margin-top: 10%;
+  }
+}
+
+@media(max-height:412px){
+  #menuObjects{
+    top:15vh;
+  }
+  #menuText{
+    font-size: 3vw;
+    margin-top: 2%;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-height: 900px){
+  #menuText{
+    margin-top: 15vh;;
+    display: flex;
+    font-size: 3vw;;
+  }
+}

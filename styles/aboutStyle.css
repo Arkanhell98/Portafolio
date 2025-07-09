@@ -1,0 +1,75 @@
+#sobreMi{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+  @keyframes glitch {
+      0%, 65% {
+        transform: translate(2px,0) skew(0deg);
+        filter: hue-rotate(5deg) brightness(1.1);
+      }
+      5%, 60% {
+        transform: translate(-2px,0) skew(0deg);
+        filter: hue-rotate(-10deg);
+      }
+      64% {
+        transform: translate(0,0) skew(5deg);
+        filter: brightness(0.9) hue-rotate(9deg);
+      }
+    }
+
+#aboutText{
+position: absolute;
+width:55vw;
+  top: 15vh;
+  right: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  z-index: 1;
+}
+
+#aboutTitle{
+    font-size: 80px;
+    font-family: 'rubik glitch';
+    font-weight: 100;
+    text-align: right;
+   opacity: 70%;
+   animation: glitch 2s linear infinite;
+}
+
+#aboutP{
+    font-size: 35px;
+    text-align: justify;
+}
+@media(max-width:1625px){
+    #aboutP{
+    font-size: 30px;
+}
+}
+@media(max-width: 1279px) {
+ #aboutText{
+  width:90vw;
+  top: 5vh;
+  right: 5vw;
+  align-items: center;
+ }
+}
+@media(max-width:667px){
+    #aboutTitle{
+        font-size:15vw ;
+    }
+    #aboutP{
+        font-size:20px ;
+    }
+
+}
+@media screen and (orientation: landscape) and (max-height: 500px){
+  #aboutTitle{
+        font-size:6vw ;
+        margin:0;
+    }
+    #aboutP{
+        font-size:6vh ;
+    }
+}

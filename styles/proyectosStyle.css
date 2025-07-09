@@ -1,0 +1,137 @@
+#proyectos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+#projectContent{
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+}
+#projectsTitle{
+    top:20%;
+    font-size: 80px;
+    font-family: 'rubik glitch';
+    font-weight: 100;
+    text-align: center;
+    margin:0;
+    color: #ffffffb4;
+    animation: glitch 2s linear infinite;
+}
+.swiper{
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    height: 90%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide img{
+    height: 100%;
+    width: auto;
+}
+.imgContainer{
+    height: 90%;
+    width: auto;
+    opacity: 60%;
+    animation: glitch 2s linear infinite;
+}
+.projectName{
+    font-size: 6vh;
+    margin:0;
+    font-family:'oxanium';
+    font-weight: 700;
+}
+.hoverProjects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    position: absolute;
+    top:0;
+    z-index: 3;
+    animation: glitch 2s linear infinite;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+.imgContainer:hover .hoverProjects {
+  opacity: 1;
+}
+.hoverProjects p{
+    width:80%;
+}
+.btnsDiv{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+}
+.btnPag{
+    background-color: #37358c73;
+    padding:2%;
+    text-decoration: none;
+    color: white;
+    margin: 10%;
+    font-family: 'oxanium';
+    font-weight: 200;
+    box-shadow: 0 0 5px white;
+    border-radius: 10px;
+}
+.btnPag:hover{
+    background-color: #37358c;
+    box-shadow: 0 0 20px white;
+    text-shadow: 0 0 5px white;
+}
+@media screen and (orientation: landscape) and (max-height: 600px){
+    .projectName{position: relative;
+        background-color: #27272796;
+        z-index:2;
+    }
+   .projectsImg{
+    height: 100%;
+    width: auto;
+} 
+.imgContainer{
+    height: 50vh;
+    width: auto;
+}
+}
+@media (max-width:1400px){
+    .swiper-slide img{
+    height: auto;
+    width: 100%;
+}
+.imgContainer{
+    display: flex;
+    align-items: center;
+    height: 80%;
+    width: auto;
+    opacity: 60%;
+    animation: glitch 2s linear infinite;
+}
+}
+
+@media(max-width:600px){
+    #projectsTitle{
+        font-size: 15vw;
+    }.projectName{
+    font-size: 10vw;
+    }
+}

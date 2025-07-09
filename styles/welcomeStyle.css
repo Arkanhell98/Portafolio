@@ -1,0 +1,102 @@
+#bienvenida{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+} 
+
+#textoIndex{
+    position: absolute;
+    width:70vw;
+    text-align: center;
+    align-items: center;
+    justify-content: center;    
+    background: transparent;
+    z-index:1;
+}
+#textoIndex h1{
+    margin: 0;
+    font-size: 10vw;
+    font-weight: 100;
+    background-color: transparent;
+    }
+
+    @keyframes glitch {
+      0%, 65% {
+        transform: translate(2px,0) skew(0deg);
+        filter: hue-rotate(5deg) brightness(1.1);
+      }
+      5%, 60% {
+        transform: translate(-2px,0) skew(0deg);
+        filter: hue-rotate(-10deg);
+      }
+      64% {
+        transform: translate(0,0) skew(5deg);
+        filter: brightness(0.9) hue-rotate(9deg);
+      }
+    }
+
+#textoIndex h2{
+    font-size: 2vw;
+    background-color: transparent;
+}
+
+#reduceText{
+    font-size: 28px;
+    background: transparent;
+    font-weight: 100;
+}
+.glitch{
+    font-family: 'rubik glitch';
+    font-weight: 100;
+    background-color: transparent;
+    animation: glitch 2s linear infinite;
+}
+#textoIndex h3{
+    font-size: 40px;
+    background-color: transparent;
+}
+
+@media(max-width: 1132px) {
+
+    #textoIndex h1{
+    font-size: 10vw;
+    }
+
+    #textoIndex h2, #textoIndex h3{
+    font-size: 5vw;
+    } 
+
+    #reduceText{
+    font-size: 3vw;
+    }
+
+    .continuarBtn{
+    font-size: 20px ;
+    bottom: 30px;
+    right:30px;
+    }
+
+    .videoContainer::after {
+    box-shadow: inset 0 0 50px #010326;
+    }
+
+}
+
+@media(max-height:412px){
+    #textoIndex{
+        width:90vw;
+    }
+    #textoIndex h2{
+        font-size: 3vw;
+    }
+    #textoIndex h3{
+    font-size: 3vw;
+  }
+}
+
+

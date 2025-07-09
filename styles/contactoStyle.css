@@ -1,0 +1,154 @@
+#contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+#contactContent{
+    top: 0vh;
+    width:100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    z-index: 1;
+}
+#contactSubsection{
+    width: 90%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contactTitle{
+    font-size: 80px;
+    font-family: 'rubik glitch';
+    font-weight: 100;
+    text-align: center;
+    margin:0;
+    color: #ffffffb4;
+    animation: glitch 2s linear infinite;
+    margin:3%;
+}
+.contactSection{
+    width: 35%;
+    height: 70%;
+    margin: 0 5%;
+}
+#contactIcons{
+    display: grid;
+    grid-template-columns: repeat(2,auto); 
+    grid-template-rows: repeat(2, auto);
+    place-items: center;
+    justify-items: center;
+    background-image: url(/assets/img/noiseImg.png),linear-gradient(to right, #9395bfda, #6e84bfda);
+    background-size: 100px,cover; 
+    background-repeat: repeat, no-repeat;
+    background-blend-mode: overlay;
+    animation: glitch 2s linear infinite;
+}
+#contactIcons figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+#contactIcons figcaption{
+    color: black;
+    font-size: 1.5rem;
+    margin: 10%;
+}
+#contactIcons img{
+    width: 50%;
+}
+#contactForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    margin-top: -5%;
+}
+#contactForm p{
+    font-family: 'geo';
+    font-size: 150%;
+    color: white;
+    margin-top: 3%;
+}
+.formSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.formSection div{
+    width:100%
+}
+#emailInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+#emailInfo input{
+    width: 100%;
+    height: 40%;
+}
+#mensaje{
+    width: 100%;
+    height: 100%;
+}
+.formInput{
+    background-image: url('/assets/img/noiseImg.png');
+    background-size: 100px,cover; 
+    background-repeat: repeat, no-repeat;
+    opacity: 60%;
+    box-shadow: 0 0 20px white;
+    border: none;
+}
+.formInput::placeholder {
+    color: rgb(37, 37, 37);
+    font-style: italic;
+    font-size: 110%;
+    font-family: 'geo';
+    opacity: 1; 
+    position: relative;
+    left:5%;
+    scrollbar-width: none;
+  }
+
+#contactForm button{
+    position: relative;
+    bottom: -25%;
+    width: 80%;height: 10%;
+    background-color: #5F4A8C;
+    border:none;
+    color: white;
+    font-family: 'geo';
+    font-size: 170%;
+    box-shadow: 0 0 10px white;
+    opacity: 70%;    
+}  
+#contactForm button:hover{
+    background-color: #7859b9;
+    box-shadow: 0 0 30px white;
+    opacity:100%;
+}
+@media(max-width: 1000px){
+    #contactSubsection{
+        flex-direction: column;
+    }
+    .contactSection{
+    width: 90%;
+    height: 40%;
+    margin:10%;
+  }
+
+}
+
+
+

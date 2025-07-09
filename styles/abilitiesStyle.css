@@ -1,0 +1,298 @@
+#habilidades{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+@keyframes glitch {
+  0%, 65% {
+    transform: translate(2px,0) skew(0deg);
+    filter: hue-rotate(5deg) brightness(1.1);
+  }
+  5%, 60% {
+    transform: translate(-2px,0) skew(0deg);
+    filter: hue-rotate(-10deg);
+  }
+  64% {
+    transform: translate(0,0) skew(5deg);
+    filter: brightness(0.9) hue-rotate(9deg);
+  }
+}
+#abilitiesContent{
+    display: flex;
+    width: 90vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    z-index: 2;
+}
+#abilitiesTitle{
+    font-size: 80px;
+    font-family: 'rubik glitch';
+    font-weight: 100;
+    text-align: right;
+    margin:0;
+    color: #72358cd2;
+    animation: glitch 2s linear infinite;
+}
+#mainContentAb{
+    display: flex;
+    width:100%;
+    height:80%;
+}
+.abilitiesSections{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:50%;
+}
+.abilitiesSections h2{
+    font-family: 'oxanium';
+    font-size: 40px;
+    color: #72358C;
+    margin:3%
+}
+.iconosContainer{
+    display: grid;
+    width:40vw;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-template-rows: repeat(2, auto);   
+    place-items: center;
+    background-image: url(/assets/img/noiseImg.png),linear-gradient(to right, #9395bf85, #6e84bf85);
+    background-size: 100px,cover; 
+    background-repeat: repeat, no-repeat;
+    background-blend-mode: overlay;
+    box-shadow: 0 0 20px #9395bfd3;
+    padding:2%;
+    animation: glitch 2s linear infinite;
+    max-height:28vh;
+}
+
+
+#diseño{
+    height:10vh;
+}
+.iconosContainer figure{
+    display: flex;
+    flex-direction: column;
+    margin:2% 3%;
+    max-width: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.iconosContainer img{
+    max-width: 85%;
+}
+
+.iconosContainer figcaption{
+    color: #272121;
+    font-weight: 900;
+    display: block;
+    font-size: 22px;
+    margin: 10px 0;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.iconosContainer figure:hover  figcaption{
+    opacity: 1;
+}
+#avatar{
+    display: flex;
+    justify-content: center;
+    animation: glitch 2s linear infinite;
+}
+#avatar img{
+    height: 100%;
+    width: auto;
+}
+#responsiveAb{
+    display:none;
+}
+
+@media(max-width:1279px) {
+    #mainContentAb{
+        display:none;
+    }
+
+    #responsiveAb{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:100vw;
+        height:70vh;
+    }
+
+    #avatarRespon img{
+        max-height:60vh;
+        animation: glitch 2s linear infinite;
+    }
+    .modalIconosContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        transform-origin: center center;
+    }
+    .modalIconos{
+        position:absolute;
+        top:10%;
+        display: none;
+        place-items: center;
+        width:100%;
+        text-align: center;
+        grid-template-columns: repeat(2,50%); 
+        grid-template-rows: repeat(5, auto);
+        background-image: url(/assets/img/noiseImg.png),linear-gradient(to right, #9395bfda, #6e84bfda);
+        background-size: 100px,cover; 
+        background-repeat: repeat, no-repeat;
+        background-blend-mode: overlay;
+        box-shadow: 0 0 20px #9395bfd3;
+        animation: glitch 2s linear infinite;  
+        animation-fill-mode: both;
+        z-index:4;
+    }
+
+    #overlay {
+       position: fixed;
+       top: 0;
+       left:0;
+       width: 100%;
+       height: 100%;
+       background-image: url('/assets/img/tvGlitch.png');
+       background-repeat: repeat;
+       background-size:auto;
+       z-index:3; 
+       display: none; 
+       opacity: 75%;
+    }
+    .xIcon{
+        position: absolute;
+        top:2%;
+        right:3%;
+        opacity: 50%;
+    }
+    .xIcon:hover{
+        opacity:1
+    }
+    .modalIconosContainer img{
+        width:40%;
+    }
+    .modalIconosContainer figcaption{
+        color: #272121;
+        display: block;
+        font-size: 20px;
+        text-align: center;
+        align-items: center;
+        transition: opacity 0.3s ease;
+        opacity: 0;
+    }
+    .modalIconosContainer figure:hover  figcaption{
+    opacity: 1;
+    }
+    .botonesModal{
+        display:flex;
+        justify-content: center;
+    }
+    .botonesModal button{
+        font-family: 'Geo';
+        color: white;
+        background: #9395bf81;
+        background-image: url(/assets/img/noiseImg.png),linear-gradient(to right, #9395bf85, #6e84bf85);
+        background-size: 100px,cover; 
+        background-repeat: repeat, no-repeat;
+        background-blend-mode: overlay;
+        border: none;
+        margin: 3%;
+        width: 30vw;
+        height: 7vh;
+        box-shadow: 0 0 10px #ffffff7a;
+        animation: glitch 2s linear infinite;
+    }
+    .botonesModal button:hover{
+        background: #9395bfc9;
+        box-shadow: 0 0 20px #ffffffd0;
+    }
+
+
+    @keyframes tvOn {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+    filter: brightness(0);
+  }
+  20% {
+    transform: scaleY(0.05);
+    opacity: 1;
+    filter: brightness(3);
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+    filter: brightness(1);
+  }
+}
+
+/* Animación de apagado de TV */
+@keyframes tvOff {
+  0% {
+    transform: scaleY(1);
+    opacity: 1;
+    filter: brightness(1);
+  }
+  80% {
+    transform: scaleY(0.05);
+    opacity: 1;
+    filter: brightness(3);
+  }
+  100% {
+    transform: scaleY(0);
+    opacity: 0;
+    filter: brightness(0);
+  }
+}
+
+/* Clase para activar animación al abrir */
+.tv-on {
+  animation: tvOn 0.4s ease forwards;
+}
+
+/* Clase para activar animación al cerrar */
+.tv-off {
+  animation: tvOff 0.5s ease forwards;
+}
+
+}
+
+
+@media(max-width:667px){
+    #abilitiesTitle{
+        font-size:12vw ;
+    }
+
+}
+
+@media screen and (orientation: landscape) and (max-height: 900px){
+    .modalIconos{
+        grid-template-columns: repeat(5,auto); 
+        grid-template-rows: repeat(2, 50%);
+    }
+    .modalIconosContainer img{
+        width:60%;
+    }
+    .xIcon{
+        width:5px;height: 5px;
+    }
+    
+}

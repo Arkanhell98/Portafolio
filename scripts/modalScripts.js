@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', function () {
   
 
 // Funciones para generar sonido
-  const tvSoundOn = new Audio("/assets/sounds/tvOn.mp3");
-  const tvSoundOff = new Audio("/assets/sounds/tvOff.mp3")
+  const tvSoundOn = new Audio("assets/sounds/tvOn.mp3");
+  const tvSoundOff = new Audio("assets/sounds/tvOff.mp3")
   
   tvSoundOn.volume = 0.5
   tvSoundOff.volume = 0.5

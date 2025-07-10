@@ -11,19 +11,25 @@
 </head>
 <body id="body">
     <div class="scroll-container" id="scrollContainer">
+            <button id="playPauseBtn" onclick="togglePlay()">
+                <img id="playPauseIcon" src="assets/img/pauseIcon.png" alt="Reproducir">
+            </button>
+            <audio id="musica" loop>
+                <source src="assets/sounds/backgroundSound.mp3" type="audio/mpeg">
+            </audio>
         <section class="secciones" id="bienvenida">
             <div id="textoIndex">
                 <h1 class="glitch">Bienvenid@</h1>
                 <h2>Soy Gabriel Pinilla, aunque entre amigos y proyectos, me conocen como <span class="glitch">GABO</span> <br>
                     <span id="reduceText">(sí, como García Márquez).</span></h2>
                     <h3>Diseño con propósito y desarrollo con lógica: Soy diseñador industrial, UX designer y desarrollador Full Stack</h3>
-                </div>
+            </div>
                 <p class="continuarBtn" onclick="scrollToSection('menuPrincipal')">Iniciar</p>
-                <div class="videoContainer">
+            <div class="videoContainer">
                     <video autoplay muted loop class="videoFondo">
                         <source src="assets/backgroundsVideos/indexLoop.mp4" type="video/mp4">
                     </video>
-                </div>
+            </div>
         </section>
         <section class="secciones" id="menuPrincipal">
             <div id="menuObjects">
@@ -415,6 +421,7 @@
     <script src="scripts/graficoScript.js"></script>
     <script src="scripts/carrouselScript.js"></script>
     <script src="scripts/contactScript.js"></script>
+    <script src="scripts/musicaFondoScript.js"></script>
+    <script src="scripts/soundScript.js"></script>
 </body>
 </html>
-

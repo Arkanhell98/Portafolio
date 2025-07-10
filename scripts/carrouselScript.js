@@ -1,5 +1,5 @@
   
-  const clickSound = new Audio('/assets/sounds/selectSound.mp3');
+  const clickSound = new Audio('assets/sounds/selectSound.mp3');
 
   const swiper = new Swiper(".mySwiper", {
        loop:true,

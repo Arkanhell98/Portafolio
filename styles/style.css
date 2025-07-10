@@ -32,7 +32,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow-x: scroll;
-  /* overflow-y: hidden;  */
+  overflow-y: hidden; 
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
 }
@@ -120,21 +120,6 @@ width: 80%;
     background-size: 100px;
     background-repeat: repeat;
     animation: glitch 2s linear infinite;
-}
-#muteToggle{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 4vw;
-  height:4vw;
-  position: fixed;
-  z-index:4;
-  top: 1.5vw;
-  right:6vw;
-  border-radius: 50%;
-  background-color: #ffffff59;
-  border: none;
-  opacity: 50%;
 }
 #playPauseBtn{
   display: flex;

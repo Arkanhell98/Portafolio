@@ -1,4 +1,4 @@
-const selectSound = new Audio("/assets/sounds/slideSound.mp3");
+const selectSound = new Audio("assets/sounds/slideSound.mp3");
   
 selectSound.volume = 0.2
   

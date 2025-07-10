@@ -13,7 +13,7 @@ const explicaciones = {
 // 👉 Función para crear el gráfico y asignarle el .textDonut cercano
 function crearGrafico(canvasId) {
 
-const selectSound = new Audio("/assets/sounds/selectSound.mp3");
+const selectSound = new Audio("assets/sounds/selectSound.mp3");
   
 selectSound.volume = 1
   

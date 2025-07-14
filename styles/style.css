@@ -151,6 +151,10 @@ width: 80%;
 
 
 @media(max-width: 1279px) {
+  .scroll-container {
+  overflow-y: scroll; 
+}
+
   .continuarBtn,.volverBtn{
     font-size: 20px;
   }
